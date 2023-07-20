@@ -1,0 +1,34 @@
+k210本地训练demo
+解压tools/ncc/ncc/ncc_v1.0/tar.xz
+tar -xf  ~.tar.xz
+
+0.安装环境 pip install -r resquirements
+初始化工程python3 train.py init
+可修改配置vim instance/config.py
+
+1.训练集放置
+#voc格式的yolo训练数据集
+├── datasets    #数据集文件夹名
+│   ├── xml		#标注文件
+│   │    └── 1		#第一类别标注文件
+│   │         ├── 0.xml
+│   │         └── ~xml/
+│   │    └── 2		#第二类别标注文件
+│   │         ├── 0.xml
+│   │         └── ~xml/
+│   ├── images		#训练图片划分
+│   │    └── 1		#第一类别标注文件
+│   │         ├── 0.jpg
+│   │         └── ~.jpg/
+│   │    └── 2		#第二类别标注文件
+│   │         ├── 0.jpg
+│   │         └── ~.jpg/
+│   ├── labels.txt		#标签
+
+2.训练目标检测模型
+python3 train.py -t detector -z datasets/~.zip train     #训练集为zip形式
+python3 train.py -t detector -z datasets/~ train           #训练集为file形式
+~为训练集名称
+
+3.模型装化为.kmodel
+若解压ncc工具在指定文件则自动导出

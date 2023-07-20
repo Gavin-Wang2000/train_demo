@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annotation>
+  <filename>0720095301_device_27.jpg</filename>
+  <size>
+    <width>224</width>
+    <height>224</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>6</name>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <occluded>0</occluded>
+    <bndbox>
+      <xmin>103</xmin>
+      <ymin>84</ymin>
+      <xmax>195</xmax>
+      <ymax>186</ymax>
+    </bndbox>
+  </object>
+</annotation>
